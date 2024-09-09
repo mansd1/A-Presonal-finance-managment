@@ -5,7 +5,6 @@ export default function AccountTable({ initialName }) {
 
   const [isEditing, setEditing] = useState(false);
   const [accountName, setAccountName] = useState(initialName);
-
   const [accountsData, setAccountsData] = useState([
     { name: "Cash", income: 5000, expenses: 3000, balance: 2000 },
     {
@@ -16,6 +15,12 @@ export default function AccountTable({ initialName }) {
     },
     {
       name: "Bank Al-Rajhi",
+      income: 0,
+      expenses: 0,
+      balance: 0,
+    },
+    {
+      name: "Bank Al-ِAnma",
       income: 0,
       expenses: 0,
       balance: 0,
